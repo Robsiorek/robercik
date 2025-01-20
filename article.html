@@ -60,7 +60,7 @@
 
     <section class="w-full pt-12">
       <div class="container px-10">
-        <div class="mx-auto w-3/4">
+        <div class="mx-auto w-full lg:w-3/4">
           <h2 class="text-center text-3xl font-black">Przykładowy tytuł artykułu, o którym będę pisać. I tekst będzie kończył się przy drugiej linijce.</h2>
         </div>
         <div class="mt-3">
@@ -78,20 +78,20 @@
             </a>
           </div>
         </div>
-        <div class="flex flex-row items-center justify-between gap-3 border-b border-solid border-slate-200 py-6">
-          <div class="flex items-center space-x-2">
-            <a href="#">
-              <div class="flex items-center space-x-2">
-                <img src="./assets/img/article-author.jpg" alt="" class="h-8 w-8 rounded-full object-cover" />
-                <span class="font-semibold duration-500 hover:text-emerald-default">Robert Truszkowski</span>
+        <div class="flex flex-col items-start border-b border-solid border-slate-200 py-6 md:flex-row md:justify-between lg:items-center">
+          <div class="flex flex-col items-start sm:flex-row sm:items-center sm:space-x-2">
+            <div class="flex items-center">
+              <img src="./assets/img/article-author.jpg" alt="" class="h-8 w-8 rounded-full object-cover" />
+              <a href="#"><span class="ml-2 font-semibold duration-500 hover:text-emerald-default">Robert Truszkowski</span></a>
+            </div>
+            <div class="mt-3 flex items-center justify-center sm:mt-0 sm:space-x-2">
+              <div class="hidden h-full items-center justify-center sm:flex">
+                <i class="fa-solid fa-circle hidden text-[6px] sm:block"></i>
               </div>
-            </a>
-            <div class="flex items-center space-x-2">
-              <span class="block text-[5px]"><i class="fa-solid fa-circle"></i></span>
               <span>1 tydzień temu, 13 stycznia 2025</span>
             </div>
           </div>
-          <div class="sharing-buttons flex flex-wrap items-center">
+          <div class="sharing-buttons mt-3 flex flex-wrap items-center justify-center md:mt-0">
             <a
               class="ease mr-2 inline-flex items-center rounded-2xl border-2 border-slate-200 bg-slate-200 p-1 text-black transition duration-200 hover:border-emerald-default hover:bg-emerald-default hover:text-slate-100"
               target="_blank"
@@ -138,8 +138,8 @@
     </section>
 
     <section class="w-full py-3 lg:py-6">
-      <div class="container mt-5 flex justify-between gap-8 px-10">
-        <div class="w-1/4">
+      <div class="container mt-5 flex flex-col justify-between gap-8 px-10 lg:flex-row">
+        <div class="w-full lg:w-1/4">
           <div class="sticky top-32 w-full">
             <div class="rounded-3xl border border-solid border-slate-200 px-5">
               <!--
@@ -159,10 +159,10 @@
             </div>
           </div>
         </div>
-        <article class="w-3/4">
-          <div class="scroll-mt-36 text-justify leading-relaxed" id="paragraph-1">
+        <article class="w-full lg:w-3/4">
+          <div class="scroll-mt-36 leading-relaxed" id="paragraph-1">
             <h3 class="mb-2 text-3xl font-black">Słowem wstępu</h3>
-            <p>
+            <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime veniam nostrum blanditiis impedit repudiandae, cumque laboriosam repellat reprehenderit eum. Ratione atque animi aliquam ducimus rem necessitatibus placeat ab,
               fugit aperiam perferendis facere veritatis ex iste non exercitationem vel. Consectetur, laborum possimus? Aspernatur doloremque pariatur sequi, eveniet vitae voluptatibus. Cumque veritatis dolor impedit ab, eos sit! Eveniet
               tempora ratione aliquid veniam ducimus corporis eum soluta nulla voluptate, qui beatae, repellat nesciunt repudiandae nemo quae nobis eaque voluptates facilis eius! Incidunt odio dolore laudantium inventore? Non, qui magnam.
@@ -171,7 +171,7 @@
               repudiandae laborum adipisci aut voluptatum voluptatibus eum soluta deserunt! Culpa id architecto voluptatum, autem, tempore corrupti minima recusandae impedit eum quibusdam, modi neque. Aperiam, qui molestias ullam ipsam
               vitae tempora deserunt error ab? Sit natus in fugiat, incidunt aut excepturi vero architecto reprehenderit voluptatibus saepe nihil sapiente at tenetur, ea quae beatae. Autem.
             </p>
-            <p>
+            <p class="text-justify">
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quos facilis illo a amet quidem laboriosam nesciunt fuga porro totam consequatur ipsum id quo assumenda necessitatibus vel, officiis aut numquam cum,
               voluptatibus provident quia dignissimos. Et voluptates tenetur minima excepturi vitae, delectus, optio velit odio magnam alias repellat repellendus laborum eos. Architecto quis ad illum repudiandae, iusto provident molestiae
@@ -179,23 +179,23 @@
               saepe est. Vero modi, dolores reprehenderit iste praesentium alias sed?
             </p>
           </div>
-          <div class="mt-14 scroll-mt-36 text-justify leading-relaxed" id="paragraph-2">
+          <div class="mt-14 scroll-mt-36 leading-relaxed" id="paragraph-2">
             <h3 class="mb-2 text-3xl font-black">Co zobaczyliśmy wspólnie na dominikanie?</h3>
-            <p>
+            <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis nostrum maiores, et corporis tempore sequi, nulla rem libero quisquam, illo eveniet autem. Cum, saepe? Hic, explicabo delectus dolorem dignissimos non
               voluptates perferendis minus cumque accusamus numquam sit temporibus rem.
             </p>
             <img src="https://4kwallpapers.com/images/wallpapers/punta-cana-dominican-republic-purple-sky-cloudy-sky-3840x2160-4309.jpg" alt="" class="my-8 rounded-3xl" />
-            <p>
+            <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus facere quae repellendus, reiciendis consequatur optio, magni, neque tempore atque expedita esse fuga facilis sequi hic eos quis omnis nisi ad. Enim
               accusantium dolor est sed. Nulla quisquam rerum nemo, blanditiis voluptatum facere recusandae molestias. Exercitationem obcaecati quo totam nisi laborum. Mollitia obcaecati aliquid rem cum qui at, cumque consequuntur id, quo
               molestiae exercitationem quibusdam aut amet tenetur atque et provident autem quia ipsam. Possimus fuga sequi odit vel accusantium repellendus voluptatem velit qui, eveniet mollitia, ratione necessitatibus, praesentium corporis
               suscipit magnam. Cupiditate corporis voluptatum optio ad, natus inventore ex!.
             </p>
           </div>
-          <div class="mt-14 scroll-mt-36 text-justify leading-relaxed" id="paragraph-3">
+          <div class="mt-14 scroll-mt-36 leading-relaxed" id="paragraph-3">
             <h3 class="mb-2 text-3xl font-black">Wyżywienie w naszym hotelu</h3>
-            <p>
+            <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
               Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
               iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
@@ -210,7 +210,7 @@
               sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
             </p>
             <img src="https://wallpaperaccess.com/full/8911188.jpg" alt="" class="my-8 rounded-3xl" />
-            <p>
+            <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
               Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
               iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
@@ -225,9 +225,9 @@
               sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
             </p>
           </div>
-          <div class="mt-14 scroll-mt-36 text-justify leading-relaxed" id="paragraph-4">
+          <div class="mt-14 scroll-mt-36 leading-relaxed" id="paragraph-4">
             <h3 class="mb-2 text-3xl font-black">Wycieczka do Santo Domingo</h3>
-            <p>
+            <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
               Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
               iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
@@ -242,7 +242,7 @@
               sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
             </p>
             <img src="https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=1280/https://media-production.lp-cdn.com/media/as7fyib34mqp1r9lsc16" alt="" class="my-8 rounded-3xl" />
-            <p>
+            <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
               Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
               iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
@@ -257,9 +257,9 @@
               sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
             </p>
           </div>
-          <div class="mt-14 scroll-mt-36 text-justify leading-relaxed" id="paragraph-5">
+          <div class="mt-14 scroll-mt-36 leading-relaxed" id="paragraph-5">
             <h3 class="mb-2 text-3xl font-black">Jakie ciekawe atrakcje polecamy?</h3>
-            <p>
+            <p class="text-justify">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
               Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
               iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
@@ -273,7 +273,7 @@
               praesentium nihil quae, eos a voluptates debitis enim sed quas animi aliquid est odio numquam repellat maiores laboriosam cum impedit modi fugiat saepe officiis. Rerum explicabo, modi, soluta nisi, deleniti maiores odit magnam
               sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
             </p>
-            <p>
+            <p class="text-justify">
               <br />
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
               Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident

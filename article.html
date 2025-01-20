@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth font-lato">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truszkowscy podróżują po świecie – Blog podróżniczy</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./assets/fonts/webfonts/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
+
+  <body class="relative flex min-h-screen flex-col justify-center bg-slate-100">
+    <header class="sticky top-0 z-30 w-full border-b border-solid border-slate-200 bg-slate-100 py-8">
+      <div class="container flex items-center justify-between px-10">
+        <a href="#"><img src="./assets/img/logo.svg" alt="" class="w-52" /></a>
+        <nav class="hidden lg:block">
+          <ul class="flex items-center gap-6">
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Wakacje w Polsce</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Wakacje za granicą</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Wasze podróże z dziećmi</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Atrakcje dla dzieci</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Blog</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Kontakt</li></a>
+          </ul>
+        </nav>
+        <div class="justify-between lg:hidden">
+          <button id="hamburger-btn" aria-label="Otwórz menu"><i class="fa-solid fa-bars text-2xl"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex h-11 w-full items-center border-b border-solid bg-slate-200">
+      <div class="container px-10">
+        <ul class="flex items-center gap-2 text-sm">
+          <a href="#"><li class="line-clamp-1 text-slate-600 duration-500 hover:text-emerald-default">Strona główna</li></a>
+          <li class="flex items-center justify-center text-slate-600"><i class="fa-solid fa-chevron-right text-[9px]"></i></li>
+          <a href="#"><li class="line-clamp-1 text-slate-600 duration-500 hover:text-emerald-default">Blog</li></a>
+          <li class="flex items-center justify-center text-slate-600"><i class="fa-solid fa-chevron-right text-[9px]"></i></li>
+          <a href="#"><li class="line-clamp-1 text-slate-600 duration-500 hover:text-emerald-default">Relacje z podróży</li></a>
+          <li class="flex items-center justify-center text-slate-600"><i class="fa-solid fa-chevron-right text-[9px]"></i></li>
+          <li class="line-clamp-1 cursor-pointer font-bold text-slate-600 duration-500 hover:text-emerald-default">Przykładowy tytuł artykułu, o którym będę pisać. I tekst będzie kończył się przy drugiej linijce.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="pointer-events-none fixed inset-0 z-50 flex flex-col items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300">
+      <button id="close-menu" aria-label="Zamknij menu" class="absolute right-5 top-5 text-2xl font-bold text-black"><i class="fa-solid fa-xmark"></i></button>
+      <ul class="flex flex-col items-center gap-6">
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Wakacje w Polsce</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Wakacje za granicą</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Wasze podróże z dziećmi</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Atrakcje dla dzieci</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Blog</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">O mnie</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <section class="w-full pt-12">
+      <div class="container px-10">
+        <div class="mx-auto w-3/4">
+          <h2 class="text-center text-3xl font-black">Przykładowy tytuł artykułu, o którym będę pisać. I tekst będzie kończył się przy drugiej linijce.</h2>
+        </div>
+        <div class="mt-3">
+          <a href="#"><span class="mx-auto box-border block w-max rounded-lg bg-blue-300 p-2 text-xs font-bold text-blue-800">Relacje z podróży</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full pt-6">
+      <div class="container px-10">
+        <div class="flex flex-col items-center">
+          <div class="relative aspect-[3/2] w-full overflow-hidden rounded-3xl">
+            <a href="#">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-859355314-1559071060.jpg?crop=0.502xw:1.00xh;0.271xw,0&resize=1200:*" alt="" class="h-full w-full object-cover" />
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-row items-center justify-between gap-3 border-b border-solid border-slate-200 py-6">
+          <div class="flex items-center space-x-2">
+            <a href="#">
+              <div class="flex items-center space-x-2">
+                <img src="./assets/img/article-author.jpg" alt="" class="h-8 w-8 rounded-full object-cover" />
+                <span class="font-semibold duration-500 hover:text-emerald-default">Robert Truszkowski</span>
+              </div>
+            </a>
+            <div class="flex items-center space-x-2">
+              <span class="block text-[5px]"><i class="fa-solid fa-circle"></i></span>
+              <span>1 tydzień temu, 13 stycznia 2025</span>
+            </div>
+          </div>
+          <div class="sharing-buttons flex flex-wrap items-center">
+            <a
+              class="ease mr-2 inline-flex items-center rounded-2xl border-2 border-slate-200 bg-slate-200 p-1 text-black transition duration-200 hover:border-emerald-default hover:bg-emerald-default hover:text-slate-100"
+              target="_blank"
+              rel="noopener"
+              id="facebook-share"
+              aria-label="Share on Facebook"
+            >
+              <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-4 w-4">
+                <title>Facebook</title>
+                <path d="M379 22v75h-44c-36 0-42 17-42 41v54h84l-12 85h-72v217h-88V277h-72v-85h72v-62c0-72 45-112 109-112 31 0 58 3 65 4z"></path>
+              </svg>
+            </a>
+            <a
+              class="ease mr-2 inline-flex items-center rounded-2xl border-2 border-slate-200 bg-slate-200 p-1 text-black transition duration-200 hover:border-emerald-default hover:bg-emerald-default hover:text-slate-100"
+              target="_blank"
+              rel="noopener"
+              id="twitter-share"
+              aria-label="Share on Twitter"
+            >
+              <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-4 w-4">
+                <title>Twitter</title>
+                <path
+                  d="m459 152 1 13c0 139-106 299-299 299-59 0-115-17-161-47a217 217 0 0 0 156-44c-47-1-85-31-98-72l19 1c10 0 19-1 28-3-48-10-84-52-84-103v-2c14 8 30 13 47 14A105 105 0 0 1 36 67c51 64 129 106 216 110-2-8-2-16-2-24a105 105 0 0 1 181-72c24-4 47-13 67-25-8 24-25 45-46 58 21-3 41-8 60-17-14 21-32 40-53 55z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="ease inline-flex items-center rounded-2xl border-2 border-slate-200 bg-slate-200 p-1 text-black transition duration-200 hover:border-emerald-default hover:bg-emerald-default hover:text-slate-100"
+              target="_blank"
+              rel="noopener"
+              id="linkedin-share"
+              aria-label="Share on Linkedin"
+            >
+              <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-4 w-4">
+                <title>Linkedin</title>
+                <path
+                  d="M136 183v283H42V183h94zm6-88c1 27-20 49-53 49-32 0-52-22-52-49 0-28 21-49 53-49s52 21 52 49zm333 208v163h-94V314c0-38-13-64-47-64-26 0-42 18-49 35-2 6-3 14-3 23v158h-94V183h94v41c12-20 34-48 85-48 62 0 108 41 108 127z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-3 lg:py-6">
+      <div class="container mt-5 flex justify-between gap-8 px-10">
+        <div class="w-1/4">
+          <div class="sticky top-32 w-full">
+            <div class="rounded-3xl border border-solid border-slate-200 px-5">
+              <!--
+              <div class="aspect-square w-full overflow-hidden rounded-3xl"><img src="./assets/img/article-author.jpg" alt="" class="h-full w-full object-cover" /></div>
+              <div class="mt-5 flex flex-col text-center">
+                <span class="text-sm text-slate-600">Napisane przez:</span>
+                <span class="text-lg font-bold text-black">Robert Truszkowski</span>
+              </div>
+              -->
+              <ol>
+                <a href="#paragraph-1"><li class="border-b border-solid border-slate-200 py-5 font-semibold duration-500 hover:text-emerald-default">1. Słowem wstępu</li></a>
+                <a href="#paragraph-2"><li class="border-b border-solid border-slate-200 py-5 font-semibold duration-500 hover:text-emerald-default">2. Co zobaczyliśmy wspólnie na dominikanie?</li></a>
+                <a href="#paragraph-3"><li class="border-b border-solid border-slate-200 py-5 font-semibold duration-500 hover:text-emerald-default">3. Wyżywienie w naszym hotelu</li></a>
+                <a href="#paragraph-4"><li class="border-b border-solid border-slate-200 py-5 font-semibold duration-500 hover:text-emerald-default">4. Wycieczka do Santo Domingo</li></a>
+                <a href="#paragraph-5"><li class="py-5 font-semibold duration-500 hover:text-emerald-default">5. Jakie ciekawe atrakcje polecamy?</li></a>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <article class="w-3/4">
+          <div class="scroll-mt-36 text-justify leading-relaxed" id="paragraph-1">
+            <h3 class="mb-2 text-3xl font-black">Słowem wstępu</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime veniam nostrum blanditiis impedit repudiandae, cumque laboriosam repellat reprehenderit eum. Ratione atque animi aliquam ducimus rem necessitatibus placeat ab,
+              fugit aperiam perferendis facere veritatis ex iste non exercitationem vel. Consectetur, laborum possimus? Aspernatur doloremque pariatur sequi, eveniet vitae voluptatibus. Cumque veritatis dolor impedit ab, eos sit! Eveniet
+              tempora ratione aliquid veniam ducimus corporis eum soluta nulla voluptate, qui beatae, repellat nesciunt repudiandae nemo quae nobis eaque voluptates facilis eius! Incidunt odio dolore laudantium inventore? Non, qui magnam.
+              Id, tempore tenetur, error cum quaerat ipsum omnis quos ex sapiente amet corporis expedita qui mollitia impedit dolorem consequatur et eligendi itaque! Animi molestiae ipsam qui perferendis. Iste animi alias doloremque ipsum a
+              illo! Porro odit recusandae, eos similique sapiente nulla architecto provident laborum optio, assumenda reprehenderit? Excepturi dolorum natus molestiae vero amet ullam beatae asperiores, animi reiciendis, ut aperiam quas,
+              repudiandae laborum adipisci aut voluptatum voluptatibus eum soluta deserunt! Culpa id architecto voluptatum, autem, tempore corrupti minima recusandae impedit eum quibusdam, modi neque. Aperiam, qui molestias ullam ipsam
+              vitae tempora deserunt error ab? Sit natus in fugiat, incidunt aut excepturi vero architecto reprehenderit voluptatibus saepe nihil sapiente at tenetur, ea quae beatae. Autem.
+            </p>
+            <p>
+              <br />
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quos facilis illo a amet quidem laboriosam nesciunt fuga porro totam consequatur ipsum id quo assumenda necessitatibus vel, officiis aut numquam cum,
+              voluptatibus provident quia dignissimos. Et voluptates tenetur minima excepturi vitae, delectus, optio velit odio magnam alias repellat repellendus laborum eos. Architecto quis ad illum repudiandae, iusto provident molestiae
+              quos dolor sapiente ut eaque! Quidem soluta excepturi laborum obcaecati. Quas, labore corporis quod impedit sit perspiciatis, non minus deserunt debitis tenetur in maiores asperiores ipsa earum eum molestias illo, ducimus
+              saepe est. Vero modi, dolores reprehenderit iste praesentium alias sed?
+            </p>
+          </div>
+          <div class="mt-14 scroll-mt-36 text-justify leading-relaxed" id="paragraph-2">
+            <h3 class="mb-2 text-3xl font-black">Co zobaczyliśmy wspólnie na dominikanie?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis nostrum maiores, et corporis tempore sequi, nulla rem libero quisquam, illo eveniet autem. Cum, saepe? Hic, explicabo delectus dolorem dignissimos non
+              voluptates perferendis minus cumque accusamus numquam sit temporibus rem.
+            </p>
+            <img src="https://4kwallpapers.com/images/wallpapers/punta-cana-dominican-republic-purple-sky-cloudy-sky-3840x2160-4309.jpg" alt="" class="my-8 rounded-3xl" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam possimus facere quae repellendus, reiciendis consequatur optio, magni, neque tempore atque expedita esse fuga facilis sequi hic eos quis omnis nisi ad. Enim
+              accusantium dolor est sed. Nulla quisquam rerum nemo, blanditiis voluptatum facere recusandae molestias. Exercitationem obcaecati quo totam nisi laborum. Mollitia obcaecati aliquid rem cum qui at, cumque consequuntur id, quo
+              molestiae exercitationem quibusdam aut amet tenetur atque et provident autem quia ipsam. Possimus fuga sequi odit vel accusantium repellendus voluptatem velit qui, eveniet mollitia, ratione necessitatibus, praesentium corporis
+              suscipit magnam. Cupiditate corporis voluptatum optio ad, natus inventore ex!.
+            </p>
+          </div>
+          <div class="mt-14 scroll-mt-36 text-justify leading-relaxed" id="paragraph-3">
+            <h3 class="mb-2 text-3xl font-black">Wyżywienie w naszym hotelu</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
+              Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
+              iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
+              Quod soluta nisi deserunt ut quaerat voluptates corporis totam qui odio similique. Eveniet beatae voluptatum hic reprehenderit perferendis deserunt, ea itaque repellendus, natus ipsa harum debitis, blanditiis accusamus
+              quibusdam repudiandae modi officia quis ab nulla ducimus ipsum! Eum dicta veritatis officiis nam, exercitationem minima at explicabo soluta minus maxime error itaque. Ex, ducimus. Necessitatibus sed, quo quod, iure harum
+              quisquam quam architecto consectetur praesentium perspiciatis aliquid ea? Repudiandae quod modi ab, delectus ut dolor suscipit recusandae quaerat commodi, veniam dicta beatae, autem perspiciatis sapiente maxime mollitia ipsam
+              officia voluptate quidem error cupiditate. Nisi minus quae recusandae maiores nemo sit asperiores quam totam voluptatibus voluptates quas, earum magni alias molestias modi dignissimos accusantium aliquam non? Nulla quis,
+              voluptates ad, incidunt tenetur deleniti quisquam dolor eum assumenda veniam harum vel possimus, qui asperiores. Sed accusantium, quaerat inventore fugiat animi, expedita odio cum nulla qui dolores, corporis itaque officiis
+              error explicabo exercitationem omnis deleniti autem velit praesentium voluptatem necessitatibus quasi. Iusto omnis optio facere aliquid! Sunt omnis tenetur eveniet, esse minima error quae vel qui iure deleniti placeat harum
+              modi autem, atque illum unde blanditiis eius neque dignissimos. Eum autem rem a fugit vitae beatae voluptas deleniti labore at eaque! Adipisci provident nulla accusantium ullam earum cupiditate. Nemo suscipit omnis voluptatum
+              praesentium nihil quae, eos a voluptates debitis enim sed quas animi aliquid est odio numquam repellat maiores laboriosam cum impedit modi fugiat saepe officiis. Rerum explicabo, modi, soluta nisi, deleniti maiores odit magnam
+              sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
+            </p>
+            <img src="https://wallpaperaccess.com/full/8911188.jpg" alt="" class="my-8 rounded-3xl" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
+              Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
+              iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
+              Quod soluta nisi deserunt ut quaerat voluptates corporis totam qui odio similique. Eveniet beatae voluptatum hic reprehenderit perferendis deserunt, ea itaque repellendus, natus ipsa harum debitis, blanditiis accusamus
+              quibusdam repudiandae modi officia quis ab nulla ducimus ipsum! Eum dicta veritatis officiis nam, exercitationem minima at explicabo soluta minus maxime error itaque. Ex, ducimus. Necessitatibus sed, quo quod, iure harum
+              quisquam quam architecto consectetur praesentium perspiciatis aliquid ea? Repudiandae quod modi ab, delectus ut dolor suscipit recusandae quaerat commodi, veniam dicta beatae, autem perspiciatis sapiente maxime mollitia ipsam
+              officia voluptate quidem error cupiditate. Nisi minus quae recusandae maiores nemo sit asperiores quam totam voluptatibus voluptates quas, earum magni alias molestias modi dignissimos accusantium aliquam non? Nulla quis,
+              voluptates ad, incidunt tenetur deleniti quisquam dolor eum assumenda veniam harum vel possimus, qui asperiores. Sed accusantium, quaerat inventore fugiat animi, expedita odio cum nulla qui dolores, corporis itaque officiis
+              error explicabo exercitationem omnis deleniti autem velit praesentium voluptatem necessitatibus quasi. Iusto omnis optio facere aliquid! Sunt omnis tenetur eveniet, esse minima error quae vel qui iure deleniti placeat harum
+              modi autem, atque illum unde blanditiis eius neque dignissimos. Eum autem rem a fugit vitae beatae voluptas deleniti labore at eaque! Adipisci provident nulla accusantium ullam earum cupiditate. Nemo suscipit omnis voluptatum
+              praesentium nihil quae, eos a voluptates debitis enim sed quas animi aliquid est odio numquam repellat maiores laboriosam cum impedit modi fugiat saepe officiis. Rerum explicabo, modi, soluta nisi, deleniti maiores odit magnam
+              sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
+            </p>
+          </div>
+          <div class="mt-14 scroll-mt-36 text-justify leading-relaxed" id="paragraph-4">
+            <h3 class="mb-2 text-3xl font-black">Wycieczka do Santo Domingo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
+              Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
+              iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
+              Quod soluta nisi deserunt ut quaerat voluptates corporis totam qui odio similique. Eveniet beatae voluptatum hic reprehenderit perferendis deserunt, ea itaque repellendus, natus ipsa harum debitis, blanditiis accusamus
+              quibusdam repudiandae modi officia quis ab nulla ducimus ipsum! Eum dicta veritatis officiis nam, exercitationem minima at explicabo soluta minus maxime error itaque. Ex, ducimus. Necessitatibus sed, quo quod, iure harum
+              quisquam quam architecto consectetur praesentium perspiciatis aliquid ea? Repudiandae quod modi ab, delectus ut dolor suscipit recusandae quaerat commodi, veniam dicta beatae, autem perspiciatis sapiente maxime mollitia ipsam
+              officia voluptate quidem error cupiditate. Nisi minus quae recusandae maiores nemo sit asperiores quam totam voluptatibus voluptates quas, earum magni alias molestias modi dignissimos accusantium aliquam non? Nulla quis,
+              voluptates ad, incidunt tenetur deleniti quisquam dolor eum assumenda veniam harum vel possimus, qui asperiores. Sed accusantium, quaerat inventore fugiat animi, expedita odio cum nulla qui dolores, corporis itaque officiis
+              error explicabo exercitationem omnis deleniti autem velit praesentium voluptatem necessitatibus quasi. Iusto omnis optio facere aliquid! Sunt omnis tenetur eveniet, esse minima error quae vel qui iure deleniti placeat harum
+              modi autem, atque illum unde blanditiis eius neque dignissimos. Eum autem rem a fugit vitae beatae voluptas deleniti labore at eaque! Adipisci provident nulla accusantium ullam earum cupiditate. Nemo suscipit omnis voluptatum
+              praesentium nihil quae, eos a voluptates debitis enim sed quas animi aliquid est odio numquam repellat maiores laboriosam cum impedit modi fugiat saepe officiis. Rerum explicabo, modi, soluta nisi, deleniti maiores odit magnam
+              sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
+            </p>
+            <img src="https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=1280/https://media-production.lp-cdn.com/media/as7fyib34mqp1r9lsc16" alt="" class="my-8 rounded-3xl" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
+              Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
+              iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
+              Quod soluta nisi deserunt ut quaerat voluptates corporis totam qui odio similique. Eveniet beatae voluptatum hic reprehenderit perferendis deserunt, ea itaque repellendus, natus ipsa harum debitis, blanditiis accusamus
+              quibusdam repudiandae modi officia quis ab nulla ducimus ipsum! Eum dicta veritatis officiis nam, exercitationem minima at explicabo soluta minus maxime error itaque. Ex, ducimus. Necessitatibus sed, quo quod, iure harum
+              quisquam quam architecto consectetur praesentium perspiciatis aliquid ea? Repudiandae quod modi ab, delectus ut dolor suscipit recusandae quaerat commodi, veniam dicta beatae, autem perspiciatis sapiente maxime mollitia ipsam
+              officia voluptate quidem error cupiditate. Nisi minus quae recusandae maiores nemo sit asperiores quam totam voluptatibus voluptates quas, earum magni alias molestias modi dignissimos accusantium aliquam non? Nulla quis,
+              voluptates ad, incidunt tenetur deleniti quisquam dolor eum assumenda veniam harum vel possimus, qui asperiores. Sed accusantium, quaerat inventore fugiat animi, expedita odio cum nulla qui dolores, corporis itaque officiis
+              error explicabo exercitationem omnis deleniti autem velit praesentium voluptatem necessitatibus quasi. Iusto omnis optio facere aliquid! Sunt omnis tenetur eveniet, esse minima error quae vel qui iure deleniti placeat harum
+              modi autem, atque illum unde blanditiis eius neque dignissimos. Eum autem rem a fugit vitae beatae voluptas deleniti labore at eaque! Adipisci provident nulla accusantium ullam earum cupiditate. Nemo suscipit omnis voluptatum
+              praesentium nihil quae, eos a voluptates debitis enim sed quas animi aliquid est odio numquam repellat maiores laboriosam cum impedit modi fugiat saepe officiis. Rerum explicabo, modi, soluta nisi, deleniti maiores odit magnam
+              sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
+            </p>
+          </div>
+          <div class="mt-14 scroll-mt-36 text-justify leading-relaxed" id="paragraph-5">
+            <h3 class="mb-2 text-3xl font-black">Jakie ciekawe atrakcje polecamy?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
+              Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
+              iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
+              Quod soluta nisi deserunt ut quaerat voluptates corporis totam qui odio similique. Eveniet beatae voluptatum hic reprehenderit perferendis deserunt, ea itaque repellendus, natus ipsa harum debitis, blanditiis accusamus
+              quibusdam repudiandae modi officia quis ab nulla ducimus ipsum! Eum dicta veritatis officiis nam, exercitationem minima at explicabo soluta minus maxime error itaque. Ex, ducimus. Necessitatibus sed, quo quod, iure harum
+              quisquam quam architecto consectetur praesentium perspiciatis aliquid ea? Repudiandae quod modi ab, delectus ut dolor suscipit recusandae quaerat commodi, veniam dicta beatae, autem perspiciatis sapiente maxime mollitia ipsam
+              officia voluptate quidem error cupiditate. Nisi minus quae recusandae maiores nemo sit asperiores quam totam voluptatibus voluptates quas, earum magni alias molestias modi dignissimos accusantium aliquam non? Nulla quis,
+              voluptates ad, incidunt tenetur deleniti quisquam dolor eum assumenda veniam harum vel possimus, qui asperiores. Sed accusantium, quaerat inventore fugiat animi, expedita odio cum nulla qui dolores, corporis itaque officiis
+              error explicabo exercitationem omnis deleniti autem velit praesentium voluptatem necessitatibus quasi. Iusto omnis optio facere aliquid! Sunt omnis tenetur eveniet, esse minima error quae vel qui iure deleniti placeat harum
+              modi autem, atque illum unde blanditiis eius neque dignissimos. Eum autem rem a fugit vitae beatae voluptas deleniti labore at eaque! Adipisci provident nulla accusantium ullam earum cupiditate. Nemo suscipit omnis voluptatum
+              praesentium nihil quae, eos a voluptates debitis enim sed quas animi aliquid est odio numquam repellat maiores laboriosam cum impedit modi fugiat saepe officiis. Rerum explicabo, modi, soluta nisi, deleniti maiores odit magnam
+              sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
+            </p>
+            <p>
+              <br />
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere voluptatem nostrum aut, esse optio modi sint, enim quod veniam facilis similique molestiae, repellat molestias magnam quis. Odio accusamus ipsa reiciendis.
+              Ratione odio, quibusdam aliquam, sint optio enim labore, repudiandae excepturi quam neque reprehenderit nemo nisi! Unde cumque voluptas aut eaque exercitationem ducimus labore ullam, in nemo neque sequi ex quisquam provident
+              iure quaerat earum consectetur ab repellendus sed commodi totam, non illum a! Ab culpa dolor quod, esse sequi et hic eveniet facere magnam impedit. Recusandae nemo animi distinctio dolores? Vero, voluptatum! Eveniet, esse.
+              Quod soluta nisi deserunt ut quaerat voluptates corporis totam qui odio similique. Eveniet beatae voluptatum hic reprehenderit perferendis deserunt, ea itaque repellendus, natus ipsa harum debitis, blanditiis accusamus
+              quibusdam repudiandae modi officia quis ab nulla ducimus ipsum! Eum dicta veritatis officiis nam, exercitationem minima at explicabo soluta minus maxime error itaque. Ex, ducimus. Necessitatibus sed, quo quod, iure harum
+              quisquam quam architecto consectetur praesentium perspiciatis aliquid ea? Repudiandae quod modi ab, delectus ut dolor suscipit recusandae quaerat commodi, veniam dicta beatae, autem perspiciatis sapiente maxime mollitia ipsam
+              officia voluptate quidem error cupiditate. Nisi minus quae recusandae maiores nemo sit asperiores quam totam voluptatibus voluptates quas, earum magni alias molestias modi dignissimos accusantium aliquam non? Nulla quis,
+              voluptates ad, incidunt tenetur deleniti quisquam dolor eum assumenda veniam harum vel possimus, qui asperiores. Sed accusantium, quaerat inventore fugiat animi, expedita odio cum nulla qui dolores, corporis itaque officiis
+              error explicabo exercitationem omnis deleniti autem velit praesentium voluptatem necessitatibus quasi. Iusto omnis optio facere aliquid! Sunt omnis tenetur eveniet, esse minima error quae vel qui iure deleniti placeat harum
+              modi autem, atque illum unde blanditiis eius neque dignissimos. Eum autem rem a fugit vitae beatae voluptas deleniti labore at eaque! Adipisci provident nulla accusantium ullam earum cupiditate. Nemo suscipit omnis voluptatum
+              praesentium nihil quae, eos a voluptates debitis enim sed quas animi aliquid est odio numquam repellat maiores laboriosam cum impedit modi fugiat saepe officiis. Rerum explicabo, modi, soluta nisi, deleniti maiores odit magnam
+              sit corrupti distinctio consequuntur eligendi ullam tempore! Quaerat non aperiam nostrum, voluptas sunt officiis illum!
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="w-full py-3 lg:py-6">
+      <div class="container px-10">
+        <div class="flex flex-col items-center justify-center gap-6 rounded-3xl bg-slate-200 p-5 md:flex-col lg:flex-row">
+          <div class="flex h-max flex-col p-5 text-center md:text-start">
+            <h2 class="text-lg font-black">Podsumowanie</h2>
+            <ul class="mt-3">
+              <li><a href="#" class="duration-300 hover:text-emerald-default">O nas</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Aktualności</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Dlaczego z nami?</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">System rezerwacji</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Galeria</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Nasz obiekt</a></li>
+            </ul>
+          </div>
+          <div class="flex h-max flex-col p-5 text-center md:text-start">
+            <h2 class="text-lg font-black">Podsumowanie</h2>
+            <ul class="mt-3">
+              <li><a href="#" class="duration-300 hover:text-emerald-default">O nas</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Aktualności</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Dlaczego z nami?</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">System rezerwacji</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Galeria</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Nasz obiekt</a></li>
+            </ul>
+          </div>
+          <div class="flex h-max flex-col p-5 text-center md:text-start">
+            <h2 class="text-lg font-black">Podsumowanie</h2>
+            <ul class="mt-3">
+              <li><a href="#" class="duration-300 hover:text-emerald-default">O nas</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Aktualności</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Dlaczego z nami?</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">System rezerwacji</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Galeria</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Nasz obiekt</a></li>
+            </ul>
+          </div>
+          <div class="flex h-max flex-col p-5 text-center md:text-start">
+            <h2 class="text-lg font-black">Podsumowanie</h2>
+            <ul class="mt-3">
+              <li><a href="#" class="duration-300 hover:text-emerald-default">O nas</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Aktualności</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Dlaczego z nami?</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">System rezerwacji</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Galeria</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Nasz obiekt</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-center">
+          <img src="./assets/img/logo.svg" alt="" class="w-64" />
+        </div>
+        <div class="mt-4 flex justify-center gap-3">
+          <a href=""><i class="fa-brands fa-instagram text-sm text-black"></i></a>
+          <a href=""><i class="fa-brands fa-facebook text-sm text-black"></i></a>
+          <a href=""><i class="fa-brands fa-youtube text-sm text-black"></i></a>
+        </div>
+        <div class="mt-4 text-center text-xs leading-relaxed text-gray-400">
+          <p>
+            Grupa Truszkowscy sp. z o.o. z siedzibą w Redzie, ul. Moniuszki 5, 84-240 Reda, zarejestrowana w Sądzie Rejonowym Gdańsk - Północ w Gdańsku, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego. <br />
+            Nr KRS: 0000954065, NIP: 5882477645, REGON: 521275624. Wysokość kapitału zakładowego 5 000 zł.
+          </p>
+          <br />
+          <p>Copyright &copy; 2025</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="./js/share.js"></script>
+  </body>
+</html>

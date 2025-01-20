@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en" class="font-lato">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert projektuje.</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./assets/fonts/webfonts/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+  </head>
+
+  <body class="relative flex min-h-screen flex-col justify-center bg-gray-100">
+    <header class="sticky top-0 z-30 w-full border-b border-solid border-gray-200 bg-gray-100 py-8">
+      <div class="container flex items-center justify-between px-10">
+        <a href="#"><img src="./assets/img/logo.svg" alt="" class="w-52" /></a>
+        <nav class="hidden lg:block">
+          <ul class="flex items-center gap-6">
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Wakacje w Polsce</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Wakacje za granicą</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Wasze podróże z dziećmi</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Atrakcje dla dzieci</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Blog</li></a>
+            <a href="#"><li class="inline-block duration-300 hover:text-emerald-default">Kontakt</li></a>
+          </ul>
+        </nav>
+        <div class="justify-between lg:hidden">
+          <button id="hamburger-btn" aria-label="Otwórz menu"><i class="fa-solid fa-bars text-2xl"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="pointer-events-none fixed inset-0 z-50 flex flex-col items-center justify-center bg-white bg-opacity-100 opacity-0 transition-opacity duration-300">
+      <button id="close-menu" aria-label="Zamknij menu" class="absolute right-5 top-5 text-2xl font-bold text-black"><i class="fa-solid fa-xmark"></i></button>
+      <ul class="flex flex-col items-center gap-6">
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Wakacje w Polsce</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Wakacje za granicą</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Wasze podróże z dziećmi</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Atrakcje dla dzieci</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Blog</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">O mnie</a></li>
+        <li><a href="#" class="text-2xl font-black text-black duration-300 hover:text-emerald-default">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <section class="w-full pb-3 pt-8 lg:pb-6 lg:pt-10">
+      <div class="container px-10">
+        <div class="flex flex-col justify-between text-start lg:flex-row lg:items-center">
+          <h2 class="text-[3rem] font-black text-black">Co nowego?</h2>
+          <p class="text-md rounded-xl bg-slate-200 px-4 py-1 font-black text-black"><i class="fa-regular fa-comments"></i> Nowe, świeże i wciągające...</p>
+        </div>
+        <div class="mt-5 flex flex-col items-center md:flex-row">
+          <div class="order-1 hidden cursor-pointer md:block">
+            <i class="fa-regular fa-circle-left text-4xl text-slate-300 duration-500 hover:text-slate-400"></i>
+          </div>
+          <div class="order-3 hidden cursor-pointer md:block">
+            <i class="fa-regular fa-circle-right text-4xl text-slate-300 duration-500 hover:text-slate-400"></i>
+          </div>
+          <div class="order-1 flex gap-5">
+            <div class="relative aspect-[1/1] w-full overflow-hidden rounded-3xl md:mx-8 lg:aspect-[3/2]">
+              <a href="#">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-859355314-1559071060.jpg?crop=0.502xw:1.00xh;0.271xw,0&resize=1200:*" alt="" class="h-full w-full object-cover" />
+                <div class="font-xl absolute bottom-0 left-0 right-0 flex flex-col justify-center bg-gradient-to-t from-gray-950 to-transparent p-10 text-xl text-white">
+                  <div class="line-clamp-2 font-black">Przykładowy tytuł artykułu, o którym będę pisać. I tekst będzie kończył się przy drugiej linijce.</div>
+                  <div class="mt-3 flex items-center gap-5">
+                    <div class="flex items-center gap-2 text-xs">
+                      <i class="fa-solid fa-pen-nib block"></i>
+                      <div>Robert Truszkowski</div>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs">
+                      <i class="fa-regular fa-calendar block"></i>
+                      <div>15.01.2024, 22:11</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="order-2 mt-5 flex w-full items-center justify-center gap-10 md:hidden">
+            <div class="flex cursor-pointer">
+              <i class="fa-regular fa-circle-left text-4xl text-slate-300 duration-500 hover:text-slate-400"></i>
+            </div>
+            <div class="flex cursor-pointer">
+              <i class="fa-regular fa-circle-right text-4xl text-slate-300 duration-500 hover:text-slate-400"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a href="#" aria-label="Explore more">
+            <button class="w-full rounded-3xl bg-emerald-default p-3 text-center font-bold text-white transition duration-500 ease-in-out hover:bg-emerald-dark md:w-1/3 lg:w-1/3">Więcej wpisów z działu najnowsze</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-3 lg:py-6">
+      <div class="container px-10">
+        <div class="flex flex-col justify-between text-start lg:flex-row lg:items-center">
+          <h2 class="text-[3rem] font-black text-black">O mnie</h2>
+          <p class="text-md rounded-xl bg-black px-4 py-1 font-black text-white"><i class="fa-regular fa-face-smile"></i> Jestem Robert i co dalej?</p>
+        </div>
+        <div class="mt-5 flex flex-col items-center justify-center rounded-3xl bg-slate-200 p-12 py-10">
+          <div class="text-justify leading-relaxed">
+            <p class="leading-relaxed">
+              Każde pozytywne słowo motywuje nas do dalszego rozwoju i doskonalenia świadczonych usług, a wszelkie sugestie traktujemy jako szansę na wprowadzenie ulepszeń. Państwa zadowolenie jest dla nas priorytetem, dlatego dokładamy
+              wszelkich starań, aby każdy mógł czuć się u nas komfortowo i docenić nasze zaangażowanie. Dobre opinie pomagają nam budować zaufanie oraz podkreślają, że obrana przez nas droga jakości i profesjonalizmu przynosi efekty.
+            </p>
+            <p class="leading-relaxed">
+              <br />
+              Dziękujemy za każdą ocenę i zapewniamy, że nadal będziemy działać z pełnym zaangażowaniem na rzecz Państwa satysfakcji.
+            </p>
+          </div>
+          <div class="mt-12 w-full text-center">
+            <a href="#" aria-label="Explore more">
+              <button class="w-full rounded-3xl bg-emerald-default p-3 text-center font-bold text-white transition duration-500 ease-in-out hover:bg-emerald-dark md:w-1/2 lg:w-1/4">Dowiedz się więcej</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-3 lg:py-6">
+      <div class="bg-slate-200 py-10">
+        <div class="container px-10">
+          <div class="flex flex-col justify-between text-start lg:flex-row lg:items-center">
+            <h2 class="text-[3rem] font-black text-black">Podróże</h2>
+            <p class="text-md block rounded-xl bg-white px-4 py-1 font-black text-black"><i class="fa-regular fa-compass"></i> Podróże małe i duże – czyli tam, gdzie nas poniesie.</p>
+          </div>
+          <div class="mt-5 flex flex-col justify-center gap-5 md:flex-row">
+            <div class="relative aspect-[1/1] w-full overflow-hidden rounded-3xl md:w-2/3 lg:aspect-[3/2]">
+              <a href="#">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-859355314-1559071060.jpg?crop=0.502xw:1.00xh;0.271xw,0&resize=1200:*" alt="" class="h-full w-full object-cover" />
+                <div class="font-xl absolute bottom-0 left-0 right-0 flex flex-col justify-center bg-gradient-to-t from-gray-950 to-transparent p-10 text-xl text-white">
+                  <div class="line-clamp-2 font-black">Przykładowy tytuł artykułu, o którym będę pisać. I tekst będzie kończył się przy drugiej linijce.</div>
+                  <div class="mt-3 flex items-center gap-5">
+                    <div class="flex items-center gap-2 text-xs">
+                      <i class="fa-solid fa-pen-nib block"></i>
+                      <div>Robert Truszkowski</div>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs">
+                      <i class="fa-regular fa-calendar block"></i>
+                      <div>15.01.2024, 22:11</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="flex flex-row items-center justify-center gap-5 md:w-2/3 md:flex-col">
+              <div class="relative aspect-[1/1] w-full overflow-hidden rounded-3xl lg:aspect-[3/2]">
+                <a href="#">
+                  <img src="https://www.oliverstravels.com/blog/wp-content/uploads/2022/06/Agiofili-Beach.png" alt="" class="h-full w-full object-cover" />
+                  <div class="font-xl text-md absolute bottom-0 left-0 right-0 flex flex-col justify-center bg-gradient-to-t from-gray-950 to-transparent px-10 py-6 text-white">
+                    <div class="line-clamp-2 font-black">A tutaj drugi artykuł, o którym będę pisać. I tekst będzie kończył się przy drugiej linijce.</div>
+                    <div class="mt-3 flex items-center gap-5">
+                      <div class="flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-pen-nib block"></i>
+                        <div>Robert Truszkowski</div>
+                      </div>
+                      <div class="flex items-center gap-2 text-xs">
+                        <i class="fa-regular fa-calendar block"></i>
+                        <div>15.01.2024, 22:11</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="relative aspect-[1/1] w-full overflow-hidden rounded-3xl lg:aspect-[3/2]">
+                <a href="#">
+                  <img src="https://www.hogansirishcottages.com/blog/wp-content/uploads/sites/8/2020/01/kylemore-abbey-connemara-ireland.jpg" alt="" class="h-full w-full object-cover" />
+                  <div class="font-xl text-md absolute bottom-0 left-0 right-0 flex flex-col justify-center bg-gradient-to-t from-gray-950 to-transparent px-10 py-6 text-white">
+                    <div class="line-clamp-2 font-black">A tutaj 3 artykuł, o którym będę pisać. I tekst będzie też kończył się przy drugiej linijce.</div>
+                    <div class="mt-3 flex items-center gap-5">
+                      <div class="flex items-center gap-2 text-xs">
+                        <i class="fa-solid fa-pen-nib block"></i>
+                        <div>Robert Truszkowski</div>
+                      </div>
+                      <div class="flex items-center gap-2 text-xs">
+                        <i class="fa-regular fa-calendar block"></i>
+                        <div>15.01.2024, 22:11</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 text-center">
+            <a href="#" aria-label="Explore more">
+              <button
+                class="h-full rounded-3xl border border-solid border-emerald-default bg-emerald-default p-3 text-center font-bold text-white transition duration-500 ease-in-out hover:border hover:border-solid hover:border-emerald-default hover:bg-transparent hover:text-emerald-default md:w-1/3 lg:w-1/3"
+              >
+                Więcej wpisów z działu podróże
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-3 lg:py-6">
+      <div class="container rounded-3xl px-10">
+        <div class="flex flex-col justify-center rounded-3xl">
+          <div class="flex flex-col justify-between text-start lg:flex-row lg:items-center">
+            <h2 class="text-[3rem] font-black text-black">Sponsorowane</h2>
+            <p class="text-md block rounded-xl bg-yellow-500 px-4 py-1 font-black text-black"><i class="fa-solid fa-handshake-angle"></i> Artykuły naszych partnerów</p>
+          </div>
+          <div class="mt-5 flex flex-col items-center gap-10 lg:flex-row">
+            <div class="w-full overflow-hidden rounded-3xl lg:w-1/2">
+              <a href="#"><img src="./assets/img/article-1.jpg" alt="" /></a>
+            </div>
+            <div class="w-full lg:w-1/2">
+              <a href="#"><span class="rounded-lg bg-orange-300 p-2 text-xs font-bold text-orange-800">Z naszej wioski</span></a>
+              <div class="mt-3">
+                <a href="#">
+                  <h3 class="text-3xl font-black duration-300 hover:text-emerald-default">Tutaj artykuł o naszym pięknym ośrodku</h3>
+                  <div class="mt-3">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas soluta ullam laudantium, obcaecati natus asperiores corrupti quos temporibus ipsa, laboriosam, nesciunt beatae recusandae ut enim doloremque nam sunt
+                      inventore dolorem in ipsum a facere nulla impedit voluptatibus? Earum, nesciunt beatae!
+                    </p>
+                  </div>
+                  <div class="mt-3 flex flex-row items-center gap-3 text-xs text-gray-600">
+                    <div class="flex items-center justify-center gap-1">
+                      <i class="fa-solid fa-pen"></i>
+                      Robert Truszkowski
+                    </div>
+                    <div class="flex items-center justify-center gap-1">
+                      <i class="fa-regular fa-calendar-days"></i>
+                      14.01.2025
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 flex flex-col items-start justify-between gap-10 sm:flex-row lg:flex-row">
+            <div class="w-full lg:w-1/3">
+              <div class="aspect-[3/2] w-full overflow-hidden rounded-3xl">
+                <a href="#"><img src="./assets/img/article-2.jpg" alt="" class="h-full w-full object-cover" /></a>
+              </div>
+              <div class="mt-3">
+                <a href="#"><span class="rounded-lg bg-blue-300 p-2 text-xs font-black text-blue-800">Blog</span></a>
+                <a href="#">
+                  <h3 class="mt-3 line-clamp-1 text-lg font-black leading-6 duration-300 hover:text-emerald-default">Marek Truszkowski zagra w Przywidzu</h3>
+                  <div class="mt-2">
+                    <p class="line-clamp-3">Już w tę niedzielę, specjalnie dla Was przyjedzie gwiazda disco polo, Marek Truszkowski. W swoim repertuarze przygotował dla Was wiele ciekawych piosenek.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="mt-3 flex flex-row items-center gap-3 text-xs text-gray-600">
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-pen"></i>
+                  Robert Truszkowski
+                </div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  14.01.2025
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/3">
+              <div class="aspect-[3/2] w-full overflow-hidden rounded-3xl">
+                <a href="#"><img src="https://swietokrzyskie.info/wiadomosci/foto/2024_05/38904_dachowanie_samochodu_widuchowa_1.jpg" alt="" class="h-full w-full object-cover" /></a>
+              </div>
+              <div class="mt-3">
+                <a href="#"><span class="rounded-lg bg-purple-300 p-2 text-xs font-bold text-purple-800">Aktualności</span></a>
+                <a href="#">
+                  <h3 class="mt-3 line-clamp-1 text-lg font-black leading-6 duration-300 hover:text-emerald-default">Przewrócił się samochód w Przywidzu</h3>
+                  <div class="mt-2">
+                    <p class="line-clamp-3">W Przywidzu ponownie dachował samochód. To już 81 taki przypadek. Jak się okazało, kierowca miał 8 promili i nie wyrobił na zakręcie.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="mt-3 flex flex-row items-center gap-3 text-xs text-gray-600">
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-pen"></i>
+                  Robert Truszkowski
+                </div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  14.01.2025
+                </div>
+              </div>
+            </div>
+            <div class="hidden lg:block lg:w-1/3">
+              <div class="aspect-[3/2] w-full overflow-hidden rounded-3xl">
+                <a href="#"><img src="./assets/img/article-4.jpg" alt="" class="h-full w-full object-cover" /></a>
+              </div>
+              <div class="mt-3">
+                <a href="#"><span class="rounded-lg bg-green-300 p-2 text-xs font-bold text-green-800">Natura</span></a>
+                <a href="#">
+                  <h3 class="mt-3 line-clamp-1 text-lg font-black leading-6 duration-300 hover:text-emerald-default">Dbamy o bogactwo minerałów w naszym jeziorze Przywidzkim</h3>
+                  <div class="mt-2">
+                    <p class="line-clamp-3">Pragniemy poinformować, że ścieki z wszystkich domków regularnie odprowadzamy do jeziora. Ostatnimi czasy podłączyliśmy z jeziora pompę wody i korzystamy sobie z niej za darmo.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="mt-3 flex flex-row items-center gap-3 text-xs text-gray-600">
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-solid fa-pen"></i>
+                  Robert Truszkowski
+                </div>
+                <div class="flex items-center justify-center gap-1">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  14.01.2025
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 text-center">
+            <a href="#" aria-label="Explore more">
+              <button class="w-full rounded-3xl bg-emerald-default p-3 text-center font-bold text-white transition duration-500 ease-in-out hover:bg-emerald-dark md:w-1/3 lg:w-1/3">Więcej artykułów partnerów</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full py-3 lg:py-6">
+      <div class="container px-10">
+        <div class="flex flex-col items-center justify-center gap-6 rounded-3xl bg-slate-200 p-5 md:flex-col lg:flex-row">
+          <div class="flex h-max flex-col p-5 text-center md:text-start">
+            <h2 class="text-lg font-black">Podsumowanie</h2>
+            <ul class="mt-3">
+              <li><a href="#" class="duration-300 hover:text-emerald-default">O nas</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Aktualności</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Dlaczego z nami?</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">System rezerwacji</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Galeria</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Nasz obiekt</a></li>
+            </ul>
+          </div>
+          <div class="flex h-max flex-col p-5 text-center md:text-start">
+            <h2 class="text-lg font-black">Podsumowanie</h2>
+            <ul class="mt-3">
+              <li><a href="#" class="duration-300 hover:text-emerald-default">O nas</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Aktualności</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Dlaczego z nami?</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">System rezerwacji</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Galeria</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Nasz obiekt</a></li>
+            </ul>
+          </div>
+          <div class="flex h-max flex-col p-5 text-center md:text-start">
+            <h2 class="text-lg font-black">Podsumowanie</h2>
+            <ul class="mt-3">
+              <li><a href="#" class="duration-300 hover:text-emerald-default">O nas</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Aktualności</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Dlaczego z nami?</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">System rezerwacji</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Galeria</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Nasz obiekt</a></li>
+            </ul>
+          </div>
+          <div class="flex h-max flex-col p-5 text-center md:text-start">
+            <h2 class="text-lg font-black">Podsumowanie</h2>
+            <ul class="mt-3">
+              <li><a href="#" class="duration-300 hover:text-emerald-default">O nas</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Aktualności</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Dlaczego z nami?</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">System rezerwacji</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Galeria</a></li>
+              <li><a href="#" class="duration-300 hover:text-emerald-default">Nasz obiekt</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-center">
+          <img src="./assets/img/logo.svg" alt="" class="w-64" />
+        </div>
+        <div class="mt-4 flex justify-center gap-3">
+          <a href=""><i class="fa-brands fa-instagram text-sm text-black"></i></a>
+          <a href=""><i class="fa-brands fa-facebook text-sm text-black"></i></a>
+          <a href=""><i class="fa-brands fa-youtube text-sm text-black"></i></a>
+        </div>
+        <div class="mt-4 text-center text-xs leading-relaxed text-gray-400">
+          <p>
+            Grupa Truszkowscy sp. z o.o. z siedzibą w Redzie, ul. Moniuszki 5, 84-240 Reda, zarejestrowana w Sądzie Rejonowym Gdańsk - Północ w Gdańsku, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego. <br />
+            Nr KRS: 0000954065, NIP: 5882477645, REGON: 521275624. Wysokość kapitału zakładowego 5 000 zł.
+          </p>
+          <br />
+          <p>Copyright &copy; 2025</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  </body>
+</html>
